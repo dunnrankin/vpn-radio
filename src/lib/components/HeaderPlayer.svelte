@@ -1,9 +1,23 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
+<script>
+	import PlayButton from '$lib/components/PlayButton.svelte';
+	import PauseButton from '$lib/components/PauseButton.svelte';
+	let paused = true;
+	const togglePaused = () => {
+		paused = !paused;
+	};
+</script>
+
 <div class="relative bg-gray-800">
-	<div class="max-w-7xl mx-auto py-8 px-3 sm:px-6 lg:px-8">
-		<div class="text-white">
-			<a href="/" class="text-blue-100 px-4">Home</a>
-			<span>Player goes here</span>
-		</div>
+	<audio bind:paused src="https://streaming.radio.co/s9f2323f0d/listen" />
+	<div class="max-w-full mx-auto py-4 px-6 sm:px-6 lg:px-8">
+		{#if paused}
+			<div on:click={() => togglePaused()}>
+				<PlayButton />
+			</div>
+		{:else}
+			<div on:click={() => togglePaused()}>
+				<PauseButton />
+			</div>
+		{/if}
 	</div>
 </div>
