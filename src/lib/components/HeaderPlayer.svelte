@@ -8,7 +8,7 @@
 	};
 </script>
 
-<div class="relative bg-gray-800">
+<div class="relative bg-black">
 	<audio bind:paused src="https://streaming.radio.co/s9f2323f0d/listen" />
 	<div class="max-w-full mx-auto py-4 px-6 sm:px-6 lg:px-8">
 		{#if paused}
