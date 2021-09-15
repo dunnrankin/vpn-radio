@@ -18,4 +18,4 @@
 	}
 </script>
 
-<h1 class="font-mono uppercase text-4xl px-8 py-10">Archive</h1>
+<h1 class="font-mono uppercase text-8xl px-8 py-10">Archive</h1>

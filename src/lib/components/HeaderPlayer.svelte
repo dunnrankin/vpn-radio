@@ -1,6 +1,7 @@
 <script>
 	import PlayButton from '$lib/components/PlayButton.svelte';
 	import PauseButton from '$lib/components/PauseButton.svelte';
+	import OnAir from '$lib/components/OnAir.svelte';
 	let paused = true;
 	const togglePaused = () => {
 		paused = !paused;
@@ -19,5 +20,8 @@
 				<PauseButton />
 			</div>
 		{/if}
+		<div class="float-right absolute inset-y-0 right-0 w-64 bg-white border border-black">
+			<div class="px-2 py-4"><OnAir /></div>
+		</div>
 	</div>
 </div>
