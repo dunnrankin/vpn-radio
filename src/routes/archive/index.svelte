@@ -6,7 +6,7 @@
 	export async function load({
 		fetch
 	}: LoadInput): Promise<{ error: Error; status: number } | { props: { archive: unknown } }> {
-		const url = '/archive/archive.json';
+		const url = '/archive.json';
 		const res = await fetch(url);
 
 		if (res.ok) {
