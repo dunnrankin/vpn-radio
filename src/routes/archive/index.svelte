@@ -54,7 +54,7 @@
 	}
 </script>
 
-<div class="container max-w-5xl">
+<div class="container max-w-7xl">
 	<h1 class="font-mono uppercase md:text-8xl text-6xl px-8 py-10">Archive</h1>
 	<div>
 		<ul>
