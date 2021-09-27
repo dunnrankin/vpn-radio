@@ -55,7 +55,7 @@
 </script>
 
 <div class="container max-w-5xl">
-	<h1 class="font-mono uppercase text-8xl px-8 py-10">Archive</h1>
+	<h1 class="font-mono uppercase md:text-8xl text-6xl px-8 py-10">Archive</h1>
 	<div>
 		<ul>
 			{#each archive.data as { key, url, name, tags }}
